@@ -1,17 +1,23 @@
 function calculateDiscountedPrice(quantity, pricePerItem) {
+    debugger;
+    
     let totalPrice = 0;
-    debugger
-    for (let i = 1; i < quantity; i++) {
+
+    
+    for (let i = 0; i < quantity; i++) {
         totalPrice += pricePerItem;
     }
+    debugger;
 
     if (quantity >= 10) {
+        debugger;
         totalPrice *= 0.9;
     }
-
+    debugger;
     return totalPrice;
 }
 
 
 
 module.exports = calculateDiscountedPrice;
+
